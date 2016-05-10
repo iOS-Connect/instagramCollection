@@ -39,6 +39,11 @@
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="size" keyPath="estimatedItemSize">
+                                    <size key="value" width="100" height="50"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="oI5-7t-1sD" customClass="InstagramCell" customModule="instagramCollection" customModuleProvider="target">
@@ -57,9 +62,12 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="gVJ-Pc-cPP" firstAttribute="centerX" secondItem="oI5-7t-1sD" secondAttribute="centerX" id="4lk-u0-pzr"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="gVJ-Pc-cPP" secondAttribute="trailing" priority="900" constant="8" id="Aee-iS-YNp"/>
+                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="gVJ-Pc-cPP" secondAttribute="bottom" constant="8" id="RSF-ob-u4f"/>
+                                    <constraint firstItem="gVJ-Pc-cPP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oI5-7t-1sD" secondAttribute="topMargin" constant="8" id="k7y-u2-405"/>
                                     <constraint firstItem="gVJ-Pc-cPP" firstAttribute="leading" secondItem="oI5-7t-1sD" secondAttribute="leadingMargin" constant="8" id="lzD-HW-Usv"/>
                                     <constraint firstItem="gVJ-Pc-cPP" firstAttribute="centerY" secondItem="oI5-7t-1sD" secondAttribute="centerY" id="na0-Ua-1MN"/>
                                 </constraints>
@@ -76,7 +84,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fl9-lc-Yh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608" y="624"/>
+            <point key="canvasLocation" x="1604" y="489"/>
         </scene>
     </scenes>
 </document>

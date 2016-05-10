@@ -26,13 +26,18 @@ class PopularCollections: UICollectionViewController {
 
 class InstagramCell: UICollectionViewCell {
   @IBOutlet weak var label: UILabel!
+
+  override func preferredLayoutAttributesFittingAttributes(layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
+    return super.preferredLayoutAttributesFittingAttributes(layoutAttributes)
+  }
+
 }
 
 class Network {
 
   func getPhotos(completion:[String] -> Void){
 
-    let names = ["one", "two", "three"]
+    let names = ["one", "two", "three", "four-five-six"]
 
     completion(names)
   }
