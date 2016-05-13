@@ -17,7 +17,7 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate {
     svc = SFSafariViewController(URL: NSURL(string:"https://api.instagram.com/oauth/authorize/" +
       "?client_id=" + clientID +
       "&redirect_uri=" + redirectURI +
-      "&response_type=code")!)
+      "&response_type=token")!)
     svc.delegate = self
     NSNotificationCenter.defaultCenter()
       .addObserver(self,

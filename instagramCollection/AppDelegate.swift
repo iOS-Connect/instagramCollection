@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  instagramCollection
-//
-//  Created by John Regner on 5/9/16.
-//  Copyright © 2016 WigglingScholars. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -24,8 +16,8 @@ enum Defaults: String {
 struct TokenURLParser {
   static func parse(url: NSURL) {
     let comps = url.absoluteString.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: "="))
-    let auth_token = comps[1]
-    NSUserDefaults.standardUserDefaults().setObject(auth_token, forKey: Defaults.AuthToken.rawValue)
+    let access_token = comps[1]
+    NSUserDefaults.standardUserDefaults().setObject(access_token, forKey: Defaults.AuthToken.rawValue)
   }
 }
 
