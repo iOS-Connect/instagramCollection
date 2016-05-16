@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,6 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="741" y="489"/>
         </scene>
         <!--Popular Collections-->
         <scene sceneID="Kn0-qm-ntI">
@@ -56,9 +57,12 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-Pc-cPP">
                                             <rect key="frame" x="16" y="28" width="55" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEX-rb-1k0">
+                                            <rect key="frame" x="0.0" y="0.0" width="87" height="78"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -71,7 +75,9 @@
                                     <constraint firstItem="gVJ-Pc-cPP" firstAttribute="leading" secondItem="oI5-7t-1sD" secondAttribute="leadingMargin" constant="8" id="lzD-HW-Usv"/>
                                     <constraint firstItem="gVJ-Pc-cPP" firstAttribute="centerY" secondItem="oI5-7t-1sD" secondAttribute="centerY" id="na0-Ua-1MN"/>
                                 </constraints>
+                                <size key="customSize" width="87" height="78"/>
                                 <connections>
+                                    <outlet property="image" destination="dEX-rb-1k0" id="Moa-Qm-iaD"/>
                                     <outlet property="label" destination="gVJ-Pc-cPP" id="Pdz-Rz-VZq"/>
                                 </connections>
                             </collectionViewCell>
@@ -84,7 +90,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fl9-lc-Yh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1604" y="489"/>
+            <point key="canvasLocation" x="1698" y="479"/>
         </scene>
     </scenes>
 </document>

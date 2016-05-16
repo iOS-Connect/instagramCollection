@@ -7,6 +7,7 @@ import SafariServices
 // pass: cwWeLzVV
 
 
+//this view login API
 class ViewController: UIViewController, SFSafariViewControllerDelegate {
 
   var svc: SFSafariViewController!
@@ -31,9 +32,12 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate {
 
   func safariLoginComplete(notification: NSNotification){
     //ensure we really have an auth token
-    guard let _ = NSUserDefaults.standardUserDefaults().stringForKey(Defaults.AuthToken.rawValue) else {
+    guard let accessT = NSUserDefaults.standardUserDefaults().stringForKey(Defaults.AuthToken.rawValue) else {
       return
+        
     }
+    print(accessT)
+
     self.svc.dismissViewControllerAnimated(true){
       self.performSegueWithIdentifier("UserIsLoggedIn", sender: nil)
     }
